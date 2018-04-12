@@ -1,0 +1,215 @@
+/* Here is our original Stylesheet */
+
+/****
+colors :
+#D11A1F red 
+#044A65 blue
+#18B7F4 , 178085 light blue
+#49056C purple
+
+
+
+****/
+
+/*General Rules */
+body{
+    font-size: 1.5rem;
+}
+
+.main-color-bg{
+    background-color: #49056c !important;
+    color: #fff !important;
+}
+
+/*End General Rules */
+
+/*Navbar Rules */
+
+.navbar-default {
+  background-color: #49056c;
+  border-color: #178085;
+}
+.navbar-default .navbar-brand {
+  color: #d6d6d6;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #ffffff;
+}
+.navbar-default .navbar-text {
+  color: #d6d6d6;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #d6d6d6;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #ffffff;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #ffffff;
+  background-color: #178085;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #ffffff;
+  background-color: #178085;
+}
+.navbar-default .navbar-toggle {
+  border-color: #178085;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #178085;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #d6d6d6;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #d6d6d6;
+}
+.navbar-default .navbar-link {
+  color: #d6d6d6;
+}
+.navbar-default .navbar-link:hover {
+  color: #ffffff;
+}
+
+
+nav.navbar{
+    border-radius: 0;
+    margin-bottom: 0;
+    
+}
+
+/*to assing navbar dimensions*/
+
+nav.navbar {
+    min-height: 20px !important;
+}
+.navbar-nav > li > a,
+.navbar-header .navbar-brand{
+    padding:10px 15px !important;
+    height: auto; /* needed for navbrand only */ 
+}
+
+
+.navbar-right li a[href="login.html"]{
+    padding-right: 0 !important;
+}
+
+
+
+/*End Navbar Rules */
+
+/*Header*/
+
+header {
+    background-color: #178085;
+    color:#fff;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1.2rem
+}
+
+header small{
+    color:#d0d0d0;
+}
+
+header button{
+    margin-top: 28px;
+}
+
+/*End Header*/
+
+/*Breadcrumb*/
+
+.breadcrumb{
+    margin-bottom: 1rem ;
+    border:2px solid #949494;
+    background-color: #d8d8d8;
+    
+}
+.breadcrumb a{
+    color:#747474;
+    text-decoration: none;
+}
+.breadcrumb .active{
+    color: #3a3a3a;
+}
+.breadcrumb>li+li:before {
+    color:#949494;
+}
+/*End Breadcrumb*/
+
+/*statitics*/
+
+.progress-bar {
+    background-color: #49056c;
+}
+
+/*End statitics*/
+
+/*Overview*/
+
+.overview .panel .panel-body span {
+    font-size : 2.4rem;
+}
+
+/*End Overview*/
+
+/*Tables*/
+table span{
+    font-size: 130%;
+}
+
+td{
+    padding : 12px;
+}
+td.butt{
+    padding: 2px 12px !important;
+}
+td a {
+    margin-left: .5rem;
+}
+
+/*End Tables*/
+
+
+
+/*Media Queries*/
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #d6d6d6;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #ffffff;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #ffffff;
+    background-color: #178085;
+  }
+}
+
+@media (max-width:995px){
+    header {
+        text-align: center;
+    }
+    header .dropdown-menu { 
+        float: none;
+        position: static;
+        left:auto;
+        max-width: 130px;
+        min-width: 100px;
+        margin:auto;
+        
+    }
+}
